@@ -35,8 +35,6 @@ Unicorn Tears
 
 """)
 
-types = ['Appetizers','Entrees','Desserts','Drinks']
-
 menu  = {
     'Appetizers' : [
         'Wings',
@@ -91,12 +89,4 @@ while True:
         break
     else:
         print('sorry .. we don\'t have that order right now !, try another one')
-
-
-
-
-
-
-  
-
 
