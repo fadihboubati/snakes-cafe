@@ -35,6 +35,7 @@ Unicorn Tears
 
 """)
 
+
 def ask_customer():
     print("""
 ***********************************
@@ -42,14 +43,15 @@ def ask_customer():
 ***********************************
     """)
 
-menu  = {
-    'Appetizers' : [
+
+menu = {
+    'Appetizers': [
         'Wings',
         'Cookies',
         'Spring Rolls'
     ],
 
-    'Entrees' : [
+    'Entrees': [
         'Salmon',
         'Steak',
         'Meat Tornado',
@@ -69,7 +71,8 @@ menu  = {
 
 }
 
-def start_orders ():
+
+def start_orders():
 
     all_user_orders = []
 
@@ -77,26 +80,27 @@ def start_orders ():
         user_order = input(">")
         all_user_orders.append(user_order)
 
-        count =  all_user_orders.count(user_order)
+        count = all_user_orders.count(user_order)
 
         if user_order in menu['Appetizers']:
-            print(f'** {count} order of {user_order} have been added to your Appetizers **')
+            print(
+                f'** {count} order of {user_order} have been added to your Appetizers **')
         elif user_order in menu['Entrees']:
-            print(f'** {count} order of {user_order} have been added to your Entrees **')
+            print(
+                f'** {count} order of {user_order} have been added to your Entrees **')
         elif user_order in menu['Desserts']:
-            print(f'** {count} order of {user_order} have been added to your Desserts **')
+            print(
+                f'** {count} order of {user_order} have been added to your Desserts **')
         elif user_order in menu['Drinks']:
-            print(f'** {count} order of {user_order} have been added to your Drinks **')
+            print(
+                f'** {count} order of {user_order} have been added to your Drinks **')
         elif user_order == 'quit':
             break
         else:
             print('sorry .. we don\'t have that order right now !, try another one')
 
-        
-
-        
 
 if __name__ == "__main__":
     show_menu()
     ask_customer()
-    start_orders ()
+    start_orders()
