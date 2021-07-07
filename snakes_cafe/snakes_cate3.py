@@ -78,7 +78,7 @@ def start_orders():
 
     while True:
         user_order = input("> ").title()
-        if (user_order=='quit'):
+        if (user_order=='Quit'):
             break
 
         not_in = True
@@ -108,8 +108,7 @@ def start_orders():
                 continue
             break
         if not_in :
-            print('sorry .. we don\'t have that order right now !, pick another one')
-            not_in = False
+            print('** sorry .. we don\'t have that order right now !, pick another one **')
             
 
 
